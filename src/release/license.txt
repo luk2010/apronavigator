@@ -1,0 +1,30 @@
+--------------------------------------------------------------
+License du Logiciel APro (Atanti's Project v. 0.06A)
+--------------------------------------------------------------
+
+IMPORTANT ! CETTE LICENSE EST VALABLE POUR TOUTES LES VERSIONS INFERIEURES A CELLE-CI.
+
+APro est un logiciel FreeWare utilisable grâce à la lisence ci-dessous.
+
+Le présent logiciel est un freeWare qui n'est pas fait pour concurrencer tout autre logiciel. Le reverse Engeneering est 
+autorisé, comme toutes les opérations qu'il est possible de faire sur un logiciel et le code source n'est soumis à aucune restriction 
+de droit, Open-Source. Les précédentes autorisations ne sont disponibles que pour une utilisation/modification à but non-lucratif bien 
+évidemment ;) ...
+
+License GNU GPL v3
+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+Copyright Atlanti's Corporation, 2010, Marseille.
+Copyright Code Source @Luk2010, 2010, Marseille.

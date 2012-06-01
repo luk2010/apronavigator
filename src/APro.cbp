@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="APro" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin\Debug\APro" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin\Release\APro" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="AProFile.cpp" />
+		<Unit filename="AProFile.h" />
+		<Unit filename="AProFileForm.h" />
+		<Unit filename="AProFileLogger.cpp" />
+		<Unit filename="AProFileLogger.h" />
+		<Unit filename="AProHomePage.cpp" />
+		<Unit filename="AProHomePage.h" />
+		<Unit filename="AProLogger.cpp" />
+		<Unit filename="AProLogger.h" />
+		<Unit filename="AProProject.cpp" />
+		<Unit filename="AProProject.h" />
+		<Unit filename="AProSearchLine.cpp" />
+		<Unit filename="AProSearchLine.h" />
+		<Unit filename="AProView.cpp" />
+		<Unit filename="AProView.h" />
+		<Unit filename="ATabBar.cpp" />
+		<Unit filename="ATabBar.h" />
+		<Unit filename="AnimatedWidgets.cpp" />
+		<Unit filename="AnimatedWidgets.h" />
+		<Unit filename="AppAll.h" />
+		<Unit filename="FenetrePrincipale.cpp" />
+		<Unit filename="FenetrePrincipale.h" />
+		<Unit filename="fenIDE.cpp" />
+		<Unit filename="fenIDE.h" />
+		<Unit filename="fenNAV.cpp" />
+		<Unit filename="fenNAV.h" />
+		<Unit filename="fenetreOptions.cpp" />
+		<Unit filename="fenetreOptions.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

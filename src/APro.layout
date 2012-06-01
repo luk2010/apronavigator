@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="AProFile.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="489" topLine="90" />
+	</File>
+	<File name="AProFile.h" open="0" top="0" tabpos="0">
+		<Cursor position="0" topLine="67" />
+	</File>
+	<File name="AProFileForm.h" open="0" top="0" tabpos="5">
+		<Cursor position="76" topLine="0" />
+	</File>
+	<File name="AProHomePage.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="9824" topLine="235" />
+	</File>
+	<File name="AProHomePage.h" open="0" top="0" tabpos="3">
+		<Cursor position="50" topLine="0" />
+	</File>
+	<File name="AProProject.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="5446" topLine="178" />
+	</File>
+	<File name="AProProject.h" open="0" top="0" tabpos="4">
+		<Cursor position="144" topLine="0" />
+	</File>
+	<File name="AProSearchLine.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="9108" topLine="314" />
+	</File>
+	<File name="AProSearchLine.h" open="0" top="0" tabpos="1">
+		<Cursor position="1239" topLine="57" />
+	</File>
+	<File name="AProView.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="7838" topLine="226" />
+	</File>
+	<File name="AProView.h" open="1" top="0" tabpos="4">
+		<Cursor position="2212" topLine="104" />
+	</File>
+	<File name="ATabBar.cpp" open="0" top="0" tabpos="7">
+		<Cursor position="93" topLine="2" />
+	</File>
+	<File name="ATabBar.h" open="0" top="0" tabpos="1">
+		<Cursor position="250" topLine="3" />
+	</File>
+	<File name="AnimatedWidgets.cpp" open="0" top="0" tabpos="6">
+		<Cursor position="1740" topLine="0" />
+	</File>
+	<File name="AnimatedWidgets.h" open="0" top="0" tabpos="5">
+		<Cursor position="132" topLine="30" />
+	</File>
+	<File name="AppAll.h" open="0" top="0" tabpos="4">
+		<Cursor position="54" topLine="0" />
+	</File>
+	<File name="FenetrePrincipale.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="5421" topLine="157" />
+	</File>
+	<File name="FenetrePrincipale.h" open="0" top="0" tabpos="3">
+		<Cursor position="1290" topLine="53" />
+	</File>
+	<File name="fenIDE.cpp" open="1" top="0" tabpos="5">
+		<Cursor position="273" topLine="387" />
+	</File>
+	<File name="fenIDE.h" open="0" top="0" tabpos="1">
+		<Cursor position="4445" topLine="43" />
+	</File>
+	<File name="fenNAV.cpp" open="1" top="1" tabpos="2">
+		<Cursor position="412" topLine="0" />
+	</File>
+	<File name="fenNAV.h" open="1" top="0" tabpos="1">
+		<Cursor position="2975" topLine="103" />
+	</File>
+	<File name="fenetreOptions.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="8432" topLine="222" />
+	</File>
+	<File name="fenetreOptions.h" open="0" top="0" tabpos="3">
+		<Cursor position="842" topLine="30" />
+	</File>
+	<File name="main.cpp" open="0" top="0" tabpos="8">
+		<Cursor position="875" topLine="24" />
+	</File>
+</CodeBlocks_layout_file>

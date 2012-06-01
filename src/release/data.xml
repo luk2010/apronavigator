@@ -1,0 +1,12 @@
+<data sys_version="1.0">
+ <build>13</build>
+ <version>0.06A</version>
+ <historique>
+  <adresse title="Google" url="http://www.google.fr/" date="lun. mai 14 2012"/>
+  <adresse title="YouTube - Broadcast Yourself" url="http://www.youtube.com/" date="lun. mai 14 2012"/>
+ </historique>
+ <favoris>
+  <adresse title="YouTube" url="www.youtube.com"/>
+  <adresse title="Google" url="http://www.google.fr/"/>
+ </favoris>
+</data>
