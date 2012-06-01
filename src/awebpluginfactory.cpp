@@ -72,7 +72,6 @@ void AWebPluginFactory::addPluginFactory(WebPlugin *factory)
 {
     if(factory != NULL)
     {
-        QMessageBox::information(0, "In Real", factory->getPlugins().first().mimeTypes.first().name);
         factories.append(factory);
     }
 }

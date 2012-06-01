@@ -1,5 +1,15 @@
 #include "webplugin.h"
 
+QScriptValue webPluginToScriptValue(QScriptEngine *engine, WebPlugin *const&in)
+{
+    return engine->newQObject(in, QScriptEngine::QtOwnership, QScriptEngine::PreferExistingWrapperObject);
+}
+
+void webPluginFromScriptValue(const QScriptValue &object, WebPlugin* &out)
+{
+    out = qobject_cast<WebPlugin*>(object.toQObject());
+}
+
 WebPlugin::WebPlugin()
 {
     /* Do nothing */

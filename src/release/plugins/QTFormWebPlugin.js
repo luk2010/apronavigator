@@ -7,6 +7,11 @@
   * @date 16/05/2012
   */
 
+var MyPlugin = new AProPlugin("QTForm Web Plugin", "Luk2010",
+                              "A Simple WebPlugin to show QtForm live !", "1",
+                              "16/05/2012", "01/06/2012");
+MainWindow.registerPlugin(MyPlugin);
+
 ////////////////////////////////////////////////////////////
 //                       Utilities                        //
 ////////////////////////////////////////////////////////////
@@ -111,7 +116,6 @@ plugin.description = "Handles QtForm in QWebkit";
 plugin.mimeTypes = new Array(new MimeType("application/x-qtform", "Mime Type for QtForm"));
 
 WebPluginFactory.setPlugins(new Array(plugin));
-QMessageBox.information(0, "In Script", WebPluginFactory.plugins[0].mimeTypes[0].description);
 
 ////////////////////////////////////////////////////////////
 //                Plugin Registration                     //

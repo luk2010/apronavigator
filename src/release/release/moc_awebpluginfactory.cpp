@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'awebpluginfactory.h'
 **
-** Created: Wed 16. May 16:42:56 2012
+** Created: Fri 1. Jun 17:24:37 2012
 **      by: The Qt Meta Object Compiler version 63 (Qt 4.8.1)
 **
 ** WARNING! All changes made in this file will be lost!

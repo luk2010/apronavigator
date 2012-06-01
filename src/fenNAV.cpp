@@ -714,10 +714,6 @@ void fenNAV::addMenuBar()
             menuAide_AProposAPro = menuAide->addAction(sv"menuAide_AProposApro"vs);
             menuAide_AProposACorp = menuAide->addAction("A propos de Atlanti's Corporation");
 
-            menuAide->addSeparator();
-
-            QAction* autoUpdate = menuAide->addAction("Verifier les mises a jour...");
-
     connect(menuNav_Affichage_AfficherHistorique,SIGNAL(toggled(bool)),this,SLOT(NAV_AfficherHistorique(bool)));
     connect(menuNav_Fichier_Options,SIGNAL(triggered()),this,SLOT(NAV_afficherOption()));
     connect(menuNav_Affichage_ZoomDown, SIGNAL(triggered()),this,SLOT(NAV_ZOOMDOWN()));
@@ -1054,6 +1050,16 @@ QMovie* fenNAV::getLoadingMovie()
 AWebPluginFactory* fenNAV::getPluginFactory()
 {
     return pluginFactory;
+}
+
+void fenNAV::registerPlugin(AProPlugin plugin)
+{
+    plugins.append(plugin);
+}
+
+QList<AProPlugin> fenNAV::getPlugins()
+{
+    return plugins;
 }
 
 //!------------------------------------------!//

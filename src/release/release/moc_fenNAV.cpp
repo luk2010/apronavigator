@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'fenNAV.h'
 **
-** Created: Wed 16. May 16:42:54 2012
+** Created: Fri 1. Jun 18:53:01 2012
 **      by: The Qt Meta Object Compiler version 63 (Qt 4.8.1)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -121,8 +121,8 @@ static const uint qt_meta_data_fenNAV[] = {
        6,       // revision
        0,       // classname
        0,    0, // classinfo
-      61,   14, // methods
-      16,  319, // properties
+      63,   14, // methods
+      17,  329, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
@@ -174,42 +174,45 @@ static const uint qt_meta_data_fenNAV[] = {
     1084,    7,    7,    7, 0x0a,
     1108,    7,    7,    7, 0x0a,
     1137, 1132,    7,    7, 0x0a,
-    1175,    7,  113,    7, 0x0a,
-    1202, 1190,    7,    7, 0x0a,
-    1234,    7, 1227,    7, 0x0a,
-    1248,    7, 1227,    7, 0x0a,
-    1265,    7, 1227,    7, 0x0a,
-    1281,    7, 1227,    7, 0x0a,
-    1307,    7, 1295,    7, 0x0a,
-    1338,    7, 1322,    7, 0x0a,
-    1367,    7, 1358,    7, 0x0a,
-    1387,    7, 1358,    7, 0x0a,
-    1406,    7, 1358,    7, 0x0a,
-    1424,    7, 1358,    7, 0x0a,
-    1440,    7, 1358,    7, 0x0a,
-    1456,    7, 1358,    7, 0x0a,
-    1472,    7, 1358,    7, 0x0a,
-    1491,    7, 1358,    7, 0x0a,
-    1522,    7, 1514,    7, 0x0a,
-    1559,    7, 1540,    7, 0x0a,
+    1182, 1175,    7,    7, 0x0a,
+    1209,    7,  113,    7, 0x0a,
+    1236, 1224,    7,    7, 0x0a,
+    1268,    7, 1261,    7, 0x0a,
+    1282,    7, 1261,    7, 0x0a,
+    1299,    7, 1261,    7, 0x0a,
+    1315,    7, 1261,    7, 0x0a,
+    1341,    7, 1329,    7, 0x0a,
+    1372,    7, 1356,    7, 0x0a,
+    1401,    7, 1392,    7, 0x0a,
+    1421,    7, 1392,    7, 0x0a,
+    1440,    7, 1392,    7, 0x0a,
+    1458,    7, 1392,    7, 0x0a,
+    1474,    7, 1392,    7, 0x0a,
+    1490,    7, 1392,    7, 0x0a,
+    1506,    7, 1392,    7, 0x0a,
+    1525,    7, 1392,    7, 0x0a,
+    1556,    7, 1548,    7, 0x0a,
+    1593,    7, 1574,    7, 0x0a,
+    1630,    7, 1612,    7, 0x0a,
 
  // properties: name, type, flags
-    1578, 1227, 0x00095009,
-    1587, 1227, 0x00095009,
-    1599, 1227, 0x00095009,
-    1610, 1227, 0x00095009,
-    1619, 1322, 0x00095009,
-    1634, 1358, 0x00095009,
-    1649, 1358, 0x00095009,
-    1663, 1358, 0x00095009,
-    1676, 1358, 0x00095009,
-    1687, 1358, 0x00095009,
-    1698, 1358, 0x00095009,
-    1709, 1358, 0x00095009,
-    1723, 1358, 0x00095009,
-    1741, 1514, 0x00095009,
-    1754, 1295, 0x00095009,
-    1764, 1540, 0x00095009,
+    1643, 1261, 0x00095009,
+    1652, 1261, 0x00095009,
+    1664, 1261, 0x00095009,
+    1675, 1261, 0x00095009,
+    1684, 1356, 0x00095009,
+    1699, 1392, 0x00095009,
+    1714, 1392, 0x00095009,
+    1728, 1392, 0x00095009,
+    1741, 1392, 0x00095009,
+    1752, 1392, 0x00095009,
+    1763, 1392, 0x00095009,
+    1774, 1392, 0x00095009,
+    1788, 1392, 0x00095009,
+    1806, 1548, 0x00095009,
+    1819, 1329, 0x00095009,
+    1829, 1574, 0x00095009,
+    1843, 1612, 0x00095009,
 
        0        // eod
 };
@@ -248,6 +251,7 @@ static const char qt_meta_stringdata_fenNAV[] = {
     "changeStatusBarMessage(QString)\0"
     "extractVideosFromPage()\0extractMusicsFromPage()\0"
     "item\0addDownloadFromItem(QListWidgetItem*)\0"
+    "plugin\0registerPlugin(AProPlugin)\0"
     "pageActuelle()\0url,pageWeb\0"
     "NAV_LOAD(QUrl,AProView*)\0QMenu*\0"
     "getFileMenu()\0getDisplayMenu()\0"
@@ -259,12 +263,14 @@ static const char qt_meta_stringdata_fenNAV[] = {
     "getHomeAction()\0getLoadAction()\0"
     "getHistoryAction()\0getFavoriteAddAction()\0"
     "QMovie*\0getLoadingMovie()\0AWebPluginFactory*\0"
-    "getPluginFactory()\0fileMenu\0displayMenu\0"
+    "getPluginFactory()\0QList<AProPlugin>\0"
+    "getPlugins()\0fileMenu\0displayMenu\0"
     "optionMenu\0helpMenu\0toolBarActions\0"
     "previousAction\0forwardAction\0reloadAction\0"
     "stopAction\0homeAction\0loadAction\0"
     "historyAction\0favoriteAddAction\0"
     "loadingMovie\0statusBar\0pluginFactory\0"
+    "plugins\0"
 };
 
 void fenNAV::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
@@ -317,41 +323,44 @@ void fenNAV::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
         case 40: _t->extractVideosFromPage(); break;
         case 41: _t->extractMusicsFromPage(); break;
         case 42: _t->addDownloadFromItem((*reinterpret_cast< QListWidgetItem*(*)>(_a[1]))); break;
-        case 43: { AProView* _r = _t->pageActuelle();
+        case 43: _t->registerPlugin((*reinterpret_cast< AProPlugin(*)>(_a[1]))); break;
+        case 44: { AProView* _r = _t->pageActuelle();
             if (_a[0]) *reinterpret_cast< AProView**>(_a[0]) = _r; }  break;
-        case 44: _t->NAV_LOAD((*reinterpret_cast< QUrl(*)>(_a[1])),(*reinterpret_cast< AProView*(*)>(_a[2]))); break;
-        case 45: { QMenu* _r = _t->getFileMenu();
+        case 45: _t->NAV_LOAD((*reinterpret_cast< QUrl(*)>(_a[1])),(*reinterpret_cast< AProView*(*)>(_a[2]))); break;
+        case 46: { QMenu* _r = _t->getFileMenu();
             if (_a[0]) *reinterpret_cast< QMenu**>(_a[0]) = _r; }  break;
-        case 46: { QMenu* _r = _t->getDisplayMenu();
+        case 47: { QMenu* _r = _t->getDisplayMenu();
             if (_a[0]) *reinterpret_cast< QMenu**>(_a[0]) = _r; }  break;
-        case 47: { QMenu* _r = _t->getOptionMenu();
+        case 48: { QMenu* _r = _t->getOptionMenu();
             if (_a[0]) *reinterpret_cast< QMenu**>(_a[0]) = _r; }  break;
-        case 48: { QMenu* _r = _t->getHelpMenu();
+        case 49: { QMenu* _r = _t->getHelpMenu();
             if (_a[0]) *reinterpret_cast< QMenu**>(_a[0]) = _r; }  break;
-        case 49: { QStatusBar* _r = _t->getStatusBar();
+        case 50: { QStatusBar* _r = _t->getStatusBar();
             if (_a[0]) *reinterpret_cast< QStatusBar**>(_a[0]) = _r; }  break;
-        case 50: { QList<QAction*> _r = _t->getToolBarActions();
+        case 51: { QList<QAction*> _r = _t->getToolBarActions();
             if (_a[0]) *reinterpret_cast< QList<QAction*>*>(_a[0]) = _r; }  break;
-        case 51: { QAction* _r = _t->getPreviousAction();
+        case 52: { QAction* _r = _t->getPreviousAction();
             if (_a[0]) *reinterpret_cast< QAction**>(_a[0]) = _r; }  break;
-        case 52: { QAction* _r = _t->getForwardAction();
+        case 53: { QAction* _r = _t->getForwardAction();
             if (_a[0]) *reinterpret_cast< QAction**>(_a[0]) = _r; }  break;
-        case 53: { QAction* _r = _t->getReloadAction();
+        case 54: { QAction* _r = _t->getReloadAction();
             if (_a[0]) *reinterpret_cast< QAction**>(_a[0]) = _r; }  break;
-        case 54: { QAction* _r = _t->getStopAction();
+        case 55: { QAction* _r = _t->getStopAction();
             if (_a[0]) *reinterpret_cast< QAction**>(_a[0]) = _r; }  break;
-        case 55: { QAction* _r = _t->getHomeAction();
+        case 56: { QAction* _r = _t->getHomeAction();
             if (_a[0]) *reinterpret_cast< QAction**>(_a[0]) = _r; }  break;
-        case 56: { QAction* _r = _t->getLoadAction();
+        case 57: { QAction* _r = _t->getLoadAction();
             if (_a[0]) *reinterpret_cast< QAction**>(_a[0]) = _r; }  break;
-        case 57: { QAction* _r = _t->getHistoryAction();
+        case 58: { QAction* _r = _t->getHistoryAction();
             if (_a[0]) *reinterpret_cast< QAction**>(_a[0]) = _r; }  break;
-        case 58: { QAction* _r = _t->getFavoriteAddAction();
+        case 59: { QAction* _r = _t->getFavoriteAddAction();
             if (_a[0]) *reinterpret_cast< QAction**>(_a[0]) = _r; }  break;
-        case 59: { QMovie* _r = _t->getLoadingMovie();
+        case 60: { QMovie* _r = _t->getLoadingMovie();
             if (_a[0]) *reinterpret_cast< QMovie**>(_a[0]) = _r; }  break;
-        case 60: { AWebPluginFactory* _r = _t->getPluginFactory();
+        case 61: { AWebPluginFactory* _r = _t->getPluginFactory();
             if (_a[0]) *reinterpret_cast< AWebPluginFactory**>(_a[0]) = _r; }  break;
+        case 62: { QList<AProPlugin> _r = _t->getPlugins();
+            if (_a[0]) *reinterpret_cast< QList<AProPlugin>*>(_a[0]) = _r; }  break;
         default: ;
         }
     }
@@ -389,9 +398,9 @@ int fenNAV::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 61)
+        if (_id < 63)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 61;
+        _id -= 63;
     }
 #ifndef QT_NO_PROPERTIES
       else if (_c == QMetaObject::ReadProperty) {
@@ -413,22 +422,23 @@ int fenNAV::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         case 13: *reinterpret_cast< QMovie**>(_v) = getLoadingMovie(); break;
         case 14: *reinterpret_cast< QStatusBar**>(_v) = getStatusBar(); break;
         case 15: *reinterpret_cast< AWebPluginFactory**>(_v) = getPluginFactory(); break;
+        case 16: *reinterpret_cast< QList<AProPlugin>*>(_v) = getPlugins(); break;
         }
-        _id -= 16;
+        _id -= 17;
     } else if (_c == QMetaObject::WriteProperty) {
-        _id -= 16;
+        _id -= 17;
     } else if (_c == QMetaObject::ResetProperty) {
-        _id -= 16;
+        _id -= 17;
     } else if (_c == QMetaObject::QueryPropertyDesignable) {
-        _id -= 16;
+        _id -= 17;
     } else if (_c == QMetaObject::QueryPropertyScriptable) {
-        _id -= 16;
+        _id -= 17;
     } else if (_c == QMetaObject::QueryPropertyStored) {
-        _id -= 16;
+        _id -= 17;
     } else if (_c == QMetaObject::QueryPropertyEditable) {
-        _id -= 16;
+        _id -= 17;
     } else if (_c == QMetaObject::QueryPropertyUser) {
-        _id -= 16;
+        _id -= 17;
     }
 #endif // QT_NO_PROPERTIES
     return _id;

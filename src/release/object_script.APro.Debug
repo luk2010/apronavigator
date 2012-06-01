@@ -18,7 +18,7 @@ INPUT(
 ./debug/webplugin.o
 ./debug/mimetype.o
 ./debug/plugin.o
-./debug/webpluginprototype.o
+./debug/aplugin.o
 ./debug/moc_AProFileForm.o
 ./debug/moc_AProSearchLine.o
 ./debug/moc_AProView.o
@@ -31,5 +31,4 @@ INPUT(
 ./debug/moc_adressbar.o
 ./debug/moc_awebpluginfactory.o
 ./debug/moc_webplugin.o
-./debug/moc_webpluginprototype.o
 );

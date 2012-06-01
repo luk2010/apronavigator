@@ -42,7 +42,7 @@ HEADERS += \
     webplugin.h \
     plugin.h \
     mimetype.h \
-    webpluginprototype.h
+    aplugin.h
 
 SOURCES += AFavoris.cpp \
            AProFile.cpp \
@@ -63,7 +63,7 @@ SOURCES += AFavoris.cpp \
     webplugin.cpp \
     mimetype.cpp \
     plugin.cpp \
-    webpluginprototype.cpp
+    aplugin.cpp
 
 
 

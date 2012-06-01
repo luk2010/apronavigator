@@ -18,7 +18,7 @@ INPUT(
 ./release/webplugin.o
 ./release/mimetype.o
 ./release/plugin.o
-./release/webpluginprototype.o
+./release/aplugin.o
 ./release/moc_AProFileForm.o
 ./release/moc_AProSearchLine.o
 ./release/moc_AProView.o
@@ -31,5 +31,4 @@ INPUT(
 ./release/moc_adressbar.o
 ./release/moc_awebpluginfactory.o
 ./release/moc_webplugin.o
-./release/moc_webpluginprototype.o
 );

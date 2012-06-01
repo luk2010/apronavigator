@@ -62,8 +62,6 @@ class Fenetre_Princ : public fenNAV
     private :
     //Resources Bases
 
-
-
     QSettings *settings;
     QSettings *settingsLangue;
 

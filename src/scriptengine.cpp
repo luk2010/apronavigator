@@ -8,17 +8,24 @@
 #include "plugin.h"
 #include "webplugin.h"
 #include "awebpluginfactory.h"
-#include "webpluginprototype.h"
+#include "aplugin.h"
 
 QScriptEngine* ScriptEngine::engine = NULL;
 
 QScriptValue preloadScript(QScriptContext* context, QScriptEngine* engine)
 {
     QString arg1 = context->argumentCount() > 0 ? context->argument(0).toString() : QString();
+    bool arg2 = context->argumentCount() > 1 ? context->argument(1).toBool() : true;
 
     if(arg1.isEmpty())
         return QScriptValue(engine, false);
 
+    if(arg2)
+        arg1.prepend("plugins/");
+    QMessageBox::information(0, "", arg1);
+
+    context->setActivationObject(context->parentContext()->activationObject());
+    context->setThisObject(context->parentContext()->thisObject());
     ScriptEngine::loadScript(arg1);
     return QScriptValue(engine, true);
 }
@@ -41,8 +48,6 @@ ScriptEngine::ScriptEngine()
 
 void ScriptEngine::init()
 {
-    qScriptRegisterSequenceMetaType<QList<QWebPluginFactory::MimeType> >(get());
-    qScriptRegisterSequenceMetaType<QList<QWebPluginFactory::Plugin> >(get());
     qScriptRegisterSequenceMetaType<QList<QWebPluginFactory*> >(get());
 
     QScriptValue funImportScript = engine->newFunction(preloadScript);
@@ -50,6 +55,11 @@ void ScriptEngine::init()
 
     QScriptValue funImportExtension = engine->newFunction(importExtension);
     engine->globalObject().setProperty("importExtension", funImportExtension);
+
+    qScriptRegisterMetaType(get(), AProPluginToScriptValue, ScriptValueToAProPlugin);
+    QScriptValue apluginctor = get()->newFunction(createAProPlugin);
+    get()->globalObject().setProperty("AProPlugin", apluginctor);
+    qScriptRegisterSequenceMetaType<QList<AProPlugin> >(get());
 
     qScriptRegisterMetaType(get(), MimeTypeToScriptValue, ScriptValueToMimeType);
     QScriptValue ctor = get()->newFunction(createMimeType);
@@ -61,10 +71,9 @@ void ScriptEngine::init()
     get()->globalObject().setProperty("Plugin", ctor2);
     qScriptRegisterSequenceMetaType<QList<Plugin> >(get());
 
-    WebPluginPrototype wpProto;
-    get()->setDefaultPrototype(qMetaTypeId<WebPlugin*>(), engine->newQObject(&wpProto));
-    QScriptValue webPluginCtor = get()->newFunction(constructWebPlugin);
-    engine->globalObject().setProperty("WebPlugin", webPluginCtor);
+    qScriptRegisterMetaType(get(), webPluginToScriptValue, webPluginFromScriptValue);
+    QScriptValue ctor3 = get()->newFunction(constructWebPlugin);
+    get()->globalObject().setProperty("WebPlugin", ctor3);
     qScriptRegisterSequenceMetaType<QList<WebPlugin*> >(get());
 
     qScriptRegisterMetaType(get(), aWebPluginFactoryToScriptValue, aWebPluginFactoryFromScriptValue);
@@ -89,6 +98,12 @@ void ScriptEngine::loadScript(QString script)
     QTextStream stream(&file);
     QString content = stream.readAll();
     file.close();
+
+    if(content.isEmpty())
+    {
+        QMessageBox::information(0, "Error", QString("Couldn't load script %0 ...").arg(script));
+        return;
+    }
 
     QScriptValue result = engine->evaluate(content);
     if(engine->hasUncaughtException())

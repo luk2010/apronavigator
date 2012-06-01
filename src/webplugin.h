@@ -49,5 +49,7 @@ Q_DECLARE_METATYPE(WebPlugin*)
 Q_DECLARE_METATYPE(QList<WebPlugin*>)
 
 QScriptValue constructWebPlugin(QScriptContext *context, QScriptEngine *engine);
+QScriptValue webPluginToScriptValue(QScriptEngine *engine, WebPlugin* const &in);
+void webPluginFromScriptValue(const QScriptValue &object, WebPlugin* &out);
 
 #endif // WEBPLUGIN_H

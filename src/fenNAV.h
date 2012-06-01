@@ -15,6 +15,7 @@
 #include "adressbar.h"
 
 #include "awebpluginfactory.h"
+#include "aplugin.h"
 
 class AProView;
 class FavButton;
@@ -91,6 +92,8 @@ class fenNAV : public QMainWindow
 
     Q_PROPERTY(AWebPluginFactory* pluginFactory READ getPluginFactory)
 
+    Q_PROPERTY(QList<AProPlugin> plugins READ getPlugins)
+
     public :
     //Constructeur
     fenNAV(QWidget *parent = 0);
@@ -143,6 +146,7 @@ class fenNAV : public QMainWindow
     void extractVideosFromPage();
     void extractMusicsFromPage();
     void addDownloadFromItem(QListWidgetItem* item);
+    void registerPlugin(AProPlugin plugin);
 
     AProView *pageActuelle();
     void NAV_LOAD(QUrl url,AProView *pageWeb);
@@ -168,6 +172,8 @@ class fenNAV : public QMainWindow
     QMovie* getLoadingMovie();
 
     AWebPluginFactory* getPluginFactory();
+
+    QList<AProPlugin> getPlugins();
 
     signals :
     void quitNOW();
@@ -273,6 +279,7 @@ class fenNAV : public QMainWindow
 
     QList<QString> listeExtension;
     QList<FavButton*> listeFavoris;
+    QList<AProPlugin> plugins;
 
     QString langue;
     QSettings *settings;

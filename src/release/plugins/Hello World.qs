@@ -1,3 +1,13 @@
+/**
+  *  This plugin is useless ! It only shows on how to create a simple plugin...
+  *
+ **/
+
+var MyPlugin = new AProPlugin("HelloWorld Plugin", "Luk2010",
+                              "This plugin is useless ! It only shows on how to create a simple plugin...", "1",
+                              "01/06/2012", "01/06/2012");
+MainWindow.registerPlugin(MyPlugin);
+
 MainWindow.displayMenu.addSeparator();
 
 var MyMenu = MainWindow.displayMenu.addMenu("Hello World");
